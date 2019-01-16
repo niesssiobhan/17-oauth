@@ -29,11 +29,25 @@ app.use(errorHandler);
 
 let isRunning = false;
 
+
+
+let path = require('path');
+let fs = require('fs');
+// let express = require('express');
+let https = require('https');
+
+let certOptions = {
+  key: fs.readFileSync(path.resolve('./keys2/server.key')),
+  cert: fs.readFileSync(path.resolve('./keys2/server.crt'))
+}
+// let app = express();
+// let server = https.createServer(certOptions, app).listen(443)ç
+
 module.exports = {
   server: app,
   start: (port) => {
     if( ! isRunning ) {
-      app.listen(port, () => {
+      https.createServer(certOptions, app).listen(port, () => {
         isRunning = true;
         console.log(`Server Up on ${port}`);
       });

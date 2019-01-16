@@ -13,24 +13,27 @@
         <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
 
         <script>
+            console.log(' ⭐️ ');
 
-          let googleURL = "https://accounts.google.com/o/oauth2/v2/auth";
+          let linkedinURL = "https://www.linkedin.com/oauth/v2/authorization";
 
+          // initial get request to kick it off
           let options = {
-            client_id:'YOUR-GOOGLE-CLIENT-ID',
-            redirect_uri: 'YOUR-SERVER-URL/oauth',
-            scope: 'email openid profile',
-            prompt: 'consent',
-            response_type: 'code'
+              client_id: '86x1cwvrgxji34',
+              response_type: 'code',
+              redirect_uri: 'http://localhost:3002/oauth',
+              state: 'ulryefshje4SDFSDFpt8uf4SETFDetgdrwa4setfzr',
+              scope: 'r_emailaddress'
           };
-
+          console.log(' 🍕 ');
           let QueryString = Object.keys(options).map( (key,i) => {
             return `${key}=` + encodeURIComponent(options[key]);
           }).join("&");
 
-          let authURL = `${googleURL}?${QueryString}`;
+          let authURL = `${linkedinURL}?${QueryString}`;
 
-          $('#oauth').append(`<a href="${authURL}">Login With Google</a>`);
+          console.log(`The auth URL that we're sending to Linkedin is: ${authURL}`);
+          $('#oauth').append(`<a href="${authURL}">Login With Linkedin</a>`);
 
         </script>
 
