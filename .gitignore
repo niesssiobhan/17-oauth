@@ -83,7 +83,7 @@ typings/
 
 ### OSX ###
 *.DS_Store
-.AppleDouble
+.AppleDoublels
 .LSOverride
 
 # Icon must end with two \r
