@@ -13,7 +13,7 @@
     "testEnvironment": "node"
   },
   "keywords": [],
-  "author": "",
+  "author": "siobhan, fletcher, tanner, jared",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.2",

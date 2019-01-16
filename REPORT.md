@@ -1,9 +1,9 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) OAuth Comparative Analysis
 ================================================================
 
-## OAuth Provider Name 
+## LInkein
 
-### Research Conducted By: Student Names
+### Research Conducted By:  Siobhan, Fletcher, Tanner, Jared
 
 ### Overall Score and Comments
 #### Score (Out of 10): 7

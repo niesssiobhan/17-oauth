@@ -1,12 +1,12 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name: OAUTH - {Provider}
+## Project Name: OAUTH - LinkedIn
 
-### Author: Student/Group Name
+### Author: Siobhan, Fletcher, Tanner, Jared
 
 ### Links and Resources
-* [repo](http://xyz.com)
+* [repo](https://github.com/niesssiobhan/17-oauth)
 * [back-end demo](http://xyz.com) 
 * [front-end demo](http://xyz.com)
 
@@ -14,11 +14,11 @@
 * [assessment report](./REPORT.md)
 
 ### Modules
-#### `auth/middleware/oauth/{filename}.js`
+#### `auth/middleware/oauth/linkedin.js`
 * List any usage/requirement notes in here
 
 ##### Implementation Notes
-* Must the server be secured?  How?
+* authO server must be secure (ssl) to make api calls to LinkedIn
 * Required ENV Variables
 * Accessing the server
 * OAuth Link 
